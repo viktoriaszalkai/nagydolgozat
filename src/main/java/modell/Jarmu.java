@@ -24,4 +24,5 @@ public class Jarmu {
     public Tulajdonos getTulajdonos() {
         return tulajdonos;
     }
+    //
 }

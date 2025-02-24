@@ -28,5 +28,5 @@ public class main {
 //            garazslista.sort(ArComparator.compare());
 //            garazslista.sort(FerohelyComparator.compare());
         }
-
+//
 }

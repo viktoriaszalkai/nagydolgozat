@@ -62,5 +62,6 @@ public class Auto extends Jarmu implements Comparable<Auto> , Cloneable{
         // uj id
         return super.clone();
     }
+    //
 
 }

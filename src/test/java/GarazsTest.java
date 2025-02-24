@@ -9,8 +9,10 @@ import static org.junit.jupiter.api.Assertions.*;
 class GarazsTest {
 
     @Test
-    public void csakOtJarmu(){
+    public void csakOtJarmu() {
         Garazs g = new Garazs(6, new ArrayList<>());
 
+    }
+    //
 
 }

@@ -10,4 +10,5 @@ public class Tulajdonos {
     public String getNev() {
         return nev;
     }
+    //
 }

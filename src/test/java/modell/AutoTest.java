@@ -14,6 +14,6 @@ class AutoTest {
         Auto a1 = new Auto("barna", UUID.randomUUID(), new Tulajdonos("béla"), "asdef",5,10000);
         Assertions.assertThrows(NemLetezoAutoException));
     }
-
+    //
 
 }
