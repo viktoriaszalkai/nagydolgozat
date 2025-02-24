@@ -2,10 +2,7 @@ import modell.Auto;
 import modell.Jarmu;
 import modell.Tulajdonos;
 
-import java.io.FileOutputStream;
-import java.io.ObjectOutput;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
+import java.io.*;
 import java.util.*;
 
 public class Garazs implements Iterable, Serializable {
@@ -43,9 +40,12 @@ public class Garazs implements Iterable, Serializable {
     }
 
     private void szerializalas(){
-        try(ObjectOutputStream objKi = new ObjectOutputStream(FileOutputStream("garazs.ser"))) {
-            objKi.writeObject(Garazs g = new Garazs(5,garazs));
+        try(ObjectOutputStream objKi = new ObjectOutputStream(new FileOutputStream("garazs.ser"))) {
+            objKi.writeObject(jarmuLista);
+        }catch (IOException e){
+            throw new RuntimeException();
         }
     }
+
 
 }
